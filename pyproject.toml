@@ -14,21 +14,21 @@ authors = [
 ]
 
 dependencies = [
-  "numpy",
-  "pandas",
-  "scikit-learn",
-  "matplotlib",
-  "seaborn",
+  "numpy>=1.24,<2.0",
+  "pandas>=1.5,<3.0",
+  "scikit-learn>=1.2,<2.0",
+  "matplotlib>=3.6,<4.0",
+  "seaborn>=0.12,<0.14",
 ]
 
-[project.optional-dependencies]
-dev = [
-  "pytest",
-  "black",
-  "ruff",
-  "mypy",
-  "pre-commit",
-]
+  [project.optional-dependencies]
+  dev = [
+    "pytest>=7.0,<9.0",
+    "black>=23.0,<25.0",
+    "ruff>=0.3,<0.7",
+    "mypy>=1.0,<2.0",
+    "pre-commit>=3.0,<4.0",
+  ]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
